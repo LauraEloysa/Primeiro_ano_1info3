@@ -1,0 +1,37 @@
+<meta charset="UTF-8" />
+<script>
+
+const salario = Number(prompt(`Informe seu salário:`));
+const cargo = prompt(`informe o código do seu cargo:`);
+
+if(cargo === "abc02"){
+    let  salarioAtual = salario * 1.125;
+    let diferenca = salarioAtual - salario
+   document.write(`Você é um gerente, seu salário antigo é ${salario} e seu novo salário é ${salarioAtual}. A diferença entre os dois salários é ${diferenca}.`)
+}
+else if(cargo === "cba01"){
+    let  salarioAtual = salario * 1.075;
+    let diferenca = salarioAtual - salario
+   document.write(`Você é um engenheiro, seu salário antigo é ${salario} e seu novo salário é ${salarioAtual}. A diferença entre os dois salários é ${diferenca}.`)
+}
+else if(cargo === "xyz09"){
+    let  salarioAtual = salario * 1.185;
+    let diferenca = salarioAtual - salario
+   document.write(`Você é um técnico, seu salário antigo é ${salario} e seu novo salário é ${salarioAtual}. A diferença entre os dois salários é ${diferenca}.`)
+}
+else if(cargo === "txa08"){
+    let  salarioAtual = salario * 1.025;
+    let diferenca = salarioAtual - salario
+   document.write(`Você é um engenheiro, seu salário antigo é ${salario} e seu novo salário é ${salarioAtual}. A diferença entre os dois salários é ${diferenca}.`)
+}
+else{
+    let  salarioAtual = salario * 1.15;
+    let diferenca = salarioAtual - salario
+   document.write(`Cargo indefinido, seu salário antigo é ${salario} e seu novo salário é ${salarioAtual}. A diferença entre os dois salários é ${diferenca}.`)
+}
+
+
+
+
+
+</script>
