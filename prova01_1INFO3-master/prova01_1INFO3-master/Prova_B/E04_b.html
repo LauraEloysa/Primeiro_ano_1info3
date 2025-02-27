@@ -1,0 +1,21 @@
+<script>
+    /*
+    PROBLEMA: Calcular custo médio do Kg da picanha
+    Devido ao alto custo da carne bovina, é necessário fazer pesquisa de preço.
+    E, para isso, um consumidor frequentou quatro mercados diferentes para fazer pesquisa de preço do Kg da carne.
+    Peça para o usuário informar o preço que consultou em cada um dos mercados.
+    Calcule e apresente para o usuário qual o preço médio do Kg da carne bovina.
+    */
+
+    //ENTRADA
+    const mercado1 = Number(prompt(`Informe qual é o valor do preço do KG da carne no primeiro mercado que você foi:`));
+    const mercado2 = Number(prompt(`Informe qual é o valor do preço do KG da carne no segundo mercado que você foi:`));
+    const mercado3 = Number(prompt(`Informe qual é o valor do preço do KG da carne no terceiro mercado que você foi:`));
+    const mercado4 = Number(prompt(`Informe qual é o valor do preço do KG da carne no quarto mercado que você foi:`));
+
+    //PROCESSAMENTO
+    const mediaPreco = (mercado1 + mercado2 + mercado3 + mercado4) / 4 ;
+
+    //SAÍDA
+    document.write (`A média de preço da carne bovina é R$ ${mediaPreco}`);
+</script>
