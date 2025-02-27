@@ -1,0 +1,42 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: CLASSIFICAÇÃO DE PRODUTO
+    Faça um script que peça para o usuário informar o código de um determinado produto e mostre a sua classificação, considerando os seguintes dados de entrada e a sua mensagem correspondente:
+    - Código 1: Alimento não-perecível
+    - Código 2, 3 ou 4: Alimento perecível
+    - Código 5 ou 6: Vestuário
+    - Código 7: 
+    - Código 8 até 15: Limpeza e Utensílios Domésticos
+    - Código 16 até 20: Outros
+    - Qualquer outro código: Código inválido
+    */
+
+    //ENTRADA
+    const codigo = prompt(`Informe o código do alimento:`);
+
+    //PROCESSAMENTO
+    if (codigo === "Código 1") {
+        document.write(`Alimento não-perecível`);
+    }
+    else if(codigo === "Código 2" || codigo === "Código 3" || codigo === "Código 4"){
+        document.write(`Alimento perecível`);
+    }
+    else if(codigo === "Código 5" || codigo === "Código 6"){
+        document.write(`Vestuário`);
+    }
+    else if(codigo === "Código 7"){
+        document.write(`Higiene Pessoal`)
+    }
+    else if( codigo === "Código 8" || codigo === "Código 9" || codigo === "Código 10" || codigo === "Código 11" || codigo === "Código 12" ||codigo === "Código 13" ||codigo === "Código 14" ||codigo === "Código 15"){
+        document.write(`Limpeza e Utensílios Domésticos`)
+    }
+    else if(codigo === "Código 16" ||codigo === "Código 17" ||codigo === "Código 18" ||codigo === "Código 19" ||codigo === "Código 20"){
+        document.write(`Outros`)
+    }
+    else{
+        document.write(`Código inválido`) 
+    }
+    //SAÍDA
+
+</script>

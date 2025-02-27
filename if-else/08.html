@@ -1,0 +1,46 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: CARREIRA DOCENTE
+    Peça para o Professor informar quantos anos de carreira possui. Peça também para que o Professor informe a quantidade de Projetos de Pesquisa que já coordenou. Também peça para que informe a quantidade de Projetos de Extensão que orientou. Por último, peça para informar a quantidade de TCCs que já orientou.
+
+    - Considere que cada ano de carreira equivale 2.5 pontos;
+    - Considere que cada Projeto de Pesquisa equivale a 5 pontos;
+    - Considere que cada Projeto de Extensão equivale a 5 pontos;
+    - Considere que cada TCC equivale a 3 pontos.
+    
+    Como resultado do cálculo das pontuações, a classificação poderá ser:
+
+    - Se o Professor possuir até 30 pontos (inclusive), será considerado "CONVIDADO";
+    - Se o Professor possuir até 50 pontos, será considerado "AGREGADO";
+    - Se o Professor possuir mais de 50 pontos, será considerado "TITULAR".
+    
+    Calcule os pontos e apresente a classificação do Professor.
+    */
+
+    //ENTRADA
+    const anosCarreira = Number(prompt(`Informe quantos anos de carreira você possui:`));
+    const projetosPesquisa = Number(prompt(`Informe quantos Projetos de Pesquisa você já coorddenou:`));
+    const projetosExtensao = Number(prompt(`Informe quantos Projetos de Extensão você já coorddenou:`));
+    const orientacaoTcc = Number(prompt(`Informe quantos TCCs você já orientou:`));
+
+    //PROCESSAMENTO
+    const carreira = anosCarreira * 2.5;
+    const pesquisa = projetosPesquisa * 5;
+    const extensao = projetosExtensao * 5;
+    const tccs = orientacaoTcc * 3 ;
+
+    const pontos = carreira  + pesquisa + extensao + tccs;
+
+    //SAÍDA
+
+    if(pontos <= 30){
+        document.write(`CONVIDADO!!`);
+    }
+    else if(30 > pontos <= 50){
+        document.write(`AGREGADO!!`);
+    }
+    else{
+        document.write(`TITULAR!!`);
+    }
+</script>

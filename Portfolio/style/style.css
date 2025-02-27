@@ -1,0 +1,222 @@
+/*===========================
+			Fonte
+=============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+  /* 
+				CSS reset
+  http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*======================
+		Geral
+========================*/
+
+html {
+    font-size: calc(10px + 0.390625vw);
+}    
+    body{ 
+        font-family: "Roboto", sans-serif; 
+    }
+    a{
+        text-decoration: none;
+        color:black ;
+    }
+main{
+	margin: 0 10vw 0 10vw;
+}
+/*======================
+		Topo
+========================*/
+
+header{
+	margin: 2vw 4vw 0 4vw;
+}
+header nav ul{
+	display:flex;
+	justify-content:right;
+
+}
+header nav ul li{
+	margin:0 10px 0 10px;
+	font-weight:bold;
+}
+header nav ul li.atual a{ 
+	color: #FF6464;
+} 
+
+/*======================
+		Conteúdo-Works
+========================*/
+
+
+main.works section{
+	border-bottom: 1px solid gray;
+	padding: 6vw 0 2.7vw 0 ;
+}
+main.works section:last-child{
+	border: none
+}
+main.works h1{
+	font-size: 1.4rem;
+	margin: 4vw 0 2vw 0;
+}
+main.works section h2{
+	font-size: 1.2rem;
+	font-weight:bold;
+}
+main.works section p span.ano{
+	background: #FF6464;
+	color: white;
+	border-radius: 8px;
+	padding: 1px 7px 1px 7px;
+}
+main.works section p{
+margin: 20px 0 7px 0;
+}
+/*======================
+	Conteúdo-Home Page
+========================*/
+main section.banner{
+	display: flex;
+	margin: 7vw 0 4vw 0;
+}
+section.banner h1 {
+	font-weight: bold;
+	font-size: 2rem;
+}
+section.banner p{
+	margin: 3vw 0 3vw 0;
+}
+section.banner button{
+	color: aliceblue;
+	background-color: #FF6464;
+	font-size: 1.5rem;
+	padding: 7px 7px 7px 7px;
+	border: 0;
+}
+section.Posts{
+	background-color: #edf7fa;
+	padding: 3vw 3vw 4vw 3vw;
+}
+section.Posts h2{
+	font-size: 1.7rem;
+	padding: 0 0 1vw 0;
+}
+section.Posts ul{
+	display: flex;
+}
+section.Posts ul li{
+	background-color: white;
+	margin: 0 1vw 0 0;
+	padding: 2vw 1.5vw 2vw 1.5vw;
+}
+section.Posts ul li:last-child{
+	margin: 0;
+}
+section.Posts ul li h3{
+	font-size:  1.2rem;
+	font-weight: bold;
+}
+section.Posts ul li p{
+	margin: 1.5vw 0 1.5vw 0;
+}
+
+section.ft-works h2{
+	font-size: 1.8rem;
+	margin: 2.5rem 0 0 0;
+
+}
+section.ft-works > div{
+	display: flex;
+}
+section.ft-works img{
+	margin: 2.5rem 0 2.5rem 0;
+}
+section.ft-works h3{
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 0 0 1.1rem 0;
+}
+section.ft-works p.pag{
+	color: rgb(171, 191, 197);
+	font-size: 1.4rem;
+	margin: 0 0 1.2rem 0;
+}
+section.ft-works p span{
+	background: #142850;
+	color: white;
+	font-weight: bold;
+	border-radius: 25px;
+	padding: 2px 7px 2px 7px;
+	margin:  0 2vw 2vw 0;
+}
+section.ft-works  div div p:last-child{
+margin: 0 2vw 2vw 0;
+}
+/*==================================
+			rodapé
+===================================*/
+footer {
+  text-align: center;
+  margin: 4vw 0 4vw 0;
+}
+footer nav ul {
+	display: flex;
+	justify-content:center;
+}
+footer nav ul li{
+		margin: 0 10px 10px 10px;
+		
+}
+footer nav ul li span{
+	font-size: 2.2rem;
+	padding: 0 1.3rem 1.1rem 0;
+}
