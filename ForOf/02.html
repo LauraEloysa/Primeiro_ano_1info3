@@ -1,0 +1,51 @@
+<meta charset="UTF-8">
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <header>
+            <div class="lista">
+                <a href="01.html">Exercício 1</a>
+                <a href="02.html" class="principal">Exercício 2</a>
+                <a href="03.html">Exercício 3</a>
+                <a href="04.html">Exercício 4</a>
+                <a href="05.html">Exercício 5</a>
+                <a href="06.html">Exercício 6</a>
+                <a href="07.html">Exercício 7</a>
+        </div>
+    </header>
+<script>
+    //PROBLEMA
+    //Considere a lista de nomes abaixo:
+    // let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
+    //Para cada nome que for lido na estrutura de repetição, pergunte ao usuário se é Masculino (M) ou Feminino (F). De acordo com a resposta do usuário, adicione na lista correspondente. Apresente as duas listas de nomes ao final do programa.
+
+    //ENTRADA
+    let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
+
+    //PROCESSAMENTO
+    let listaFeminino = [];
+    let listaMasculino = [];
+
+    for (let item of listaDeNomes){
+        let perguntaGenero = prompt(`O nome ${item} é Feminino(F) ou Masculino(M)?`);
+       if(perguntaGenero === "F"){
+            listaFeminino.push(item);
+        }
+        else if(perguntaGenero === "M"){
+            listaMasculino.push(item);
+        }
+        else{
+            alert(`Entrada inválida, adicione apenas M ou F.`);
+        }
+     };
+
+        
+    //SAÍDA
+    document.write(`<div>
+        Lista de nomes femininos: <li>${listaFeminino.join("<li>")} <br>
+    Lista dos nomes masculinos: <li>${listaMasculino.join("<li>")}
+    </div>`);
+
+</script>
+</html>

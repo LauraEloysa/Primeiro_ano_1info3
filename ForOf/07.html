@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <header>
+            <div class="lista">
+                <a href="01.html">Exercício 1</a>
+                <a href="02.html" >Exercício 2</a>
+                <a href="03.html">Exercício 3</a>
+                <a href="04.html">Exercício 4</a>
+                <a href="05.html">Exercício 5</a>
+                <a href="06.html">Exercício 6</a>
+                <a href="07.html"class="principal">Exercício 7</a>
+        </div>
+    </header>
+<script>
+    //PROBLEMA
+    //Considere a lista de números abaixo:
+    // let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+    //Identifique APENAS os números INTEIROS e POSITIVOS. Adicione-os em uma lista e apresente ao fim do programa, indicando também quantos números foram localizados.
+
+    //ENTRADA
+    let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+
+    //PROCESSAMENTO
+    let numerosPositivos = [];
+
+    for(let numeros of listaDeNumeros){
+        if(Number.isInteger(numeros) && numeros > 0){
+            numerosPositivos.push(numeros);
+        }
+    }
+
+    //SAÍDA
+    alert(`Os números inteiros e positivos são: ${numerosPositivos}.\n As quantidades de números inteiros e positivos são: ${numerosPositivos.length}.`);
+
+</script>
+</html>

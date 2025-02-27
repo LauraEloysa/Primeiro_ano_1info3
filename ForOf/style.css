@@ -1,0 +1,21 @@
+a{
+    margin: 5vw 1vw ;
+    text-decoration: none;
+    color: black;
+}
+a.principal{
+    background-color: palevioletred;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+header{
+    margin: 3vw 2vw 3vw 0;
+}
+div.lista{
+    text-align: right;
+}
+div.lista li{
+    text-decoration: none;
+}
+

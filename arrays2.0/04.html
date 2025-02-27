@@ -1,0 +1,34 @@
+<script>
+    //Problema: Remover SUV
+    //Crie os seguintes arrays:
+    // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSportx"];
+    //Pergunte ao usuário qual carro deseja REMOVER da lista.
+    //Apresente a lista antiga de SUVs e a nova lista, após a remoção do veículo solicitado.
+
+    //ENTRADA
+    const pergunta = prompt(`Qual carro você deseja remover? \n-${carrosSUV.join("\n-")}`);
+
+    //PROCESSAMENTO
+    let carrosSUV =  ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+   
+    if(pergunta === "Tiggo"){
+        carrosSUV = ["Sportage", "Tucson", "EcoSport"];
+    }
+    else if(pergunta === "Sportage"){
+        carrosSUV = ["Tiggo", "Tucson", "EcoSport"];
+    }
+    else if(pergunta === "Tucson"){
+        carrosSUV = ["Tiggo", "Sportage", "EcoSport"];
+    }
+    else if(pergunta === "EcoSport"){
+        carrosSUV = ["Tiggo", "Sportage", "Tucson"];
+    }
+    else{
+        document.write(`Esse carro não é válido!!`);
+    }
+    
+    //SAÍDA
+    document.write(`A antiga lista é: Tiggo, Sportage, Tucson, EcoSport <br>
+    A nova lista: ${carrosSUV.join(", ")}`);
+    
+    </script>

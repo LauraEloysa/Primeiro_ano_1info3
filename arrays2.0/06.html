@@ -1,0 +1,78 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: LOJA DE VEÍCULOS
+    Crie os seguintes arrays:
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    
+    Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+
+    Apresente a lista final de cada tipo de veículo.
+    */
+
+    //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    let carros = ["SUV", "Sedan", "Hatch"];
+    
+    const adicionarCarro1 = prompt(`Informe um carro para ser adicionado:`);
+    const adicionarCarro2 = prompt(`Informe outro carro para ser adicionado:`);
+    const adicionarCarro3 = prompt(`Informe outro carro para ser adicionado:`);
+    const categoriaCarro1 = prompt(`Informe a categoria do primeiro carro que você inseriu: \n-${carros.join("\n-")}`);
+    const categoriaCarro2 = prompt(`Informe a categoria do segundo carro que você inseriu: \n-${carros.join("\n-")}`);
+    const categoriaCarro3 = prompt(`Informe a categoria do terceiro carro que você inseriu: \n-${carros.join("\n-")}`);
+
+    //PROCESSAMENTO
+
+     if(categoriaCarro1 === "SUV"){
+        if(categoriaCarro2 === "Sedan" && categoriaCarro3 === "Hatch"){
+            carrosSUV = carrosSUV.concat(adicionarCarro1);
+            carrosSedan = carrosSedan.concat(adicionarCarro2);
+            carrosHatch = carrosHatch.concat(adicionarCarro3);
+        }
+        else if(categoriaCarro3 === "Sedan" && categoriaCarro2 === "Hatch"){
+            carrosSUV = carrosSUV.concat(adicionarCarro1);
+            carrosSedan = carrosSedan.concat(adicionarCarro3);
+            carrosHatch = carrosHatch.concat(adicionarCarro2);
+        }
+     }
+     else if(categoriaCarro2 === "SUV"){
+        if(categoriaCarro1 === "Sedan" && categoriaCarro3 === "Hatch"){
+            carrosSUV = carrosSUV.concat(adicionarCarro2);
+            carrosSedan = carrosSedan.concat(adicionarCarro1);
+            carrosHatch = carrosHatch.concat(adicionarCarro3);
+        }
+        else if(categoriaCarro1 === "Hatch" && categoriaCarro3 === "Sedan"){
+            carrosSUV = carrosSUV.concat(adicionarCarro2);
+            carrosSedan = carrosSedan.concat(adicionarCarro3);
+            carrosHatch = carrosHatch.concat(adicionarCarro1);
+        }
+     }
+     else if(categoriaCarro3 === "SUV"){
+        if(categoriaCarro1 === "Sedan" && categoriaCarro2 === "Hatch"){
+            carrosSUV = carrosSUV.concat(adicionarCarro3);
+            carrosSedan = carrosSedan.concat(adicionarCarro1);
+            carrosHatch = carrosHatch.concat(adicionarCarro2);
+        }
+        else if(categoriaCarro1 === "Hatch" && categoriaCarro2 === "Sedan"){
+            carrosSUV = carrosSUV.concat(adicionarCarro3);
+            carrosSedan = carrosSedan.concat(adicionarCarro2);
+            carrosHatch = carrosHatch.concat(adicionarCarro1);
+        }
+     }
+    
+    
+   
+   
+
+
+    //SAÍDA
+    document.write(`Lista dos carros SUVs: ${carrosSUV.join(", ")} <br>
+    Lista dos carros Sedan: ${carrosSedan.join(", ")} <br>
+    Lista dos carros Hatch: ${carrosHatch.join(", ")}`);
+    
+    
+</script> 

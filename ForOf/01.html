@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+        <div class="lista">
+            <a href="01.html" class="principal">Exercício 1</a>
+            <a href="02.html" >Exercício 2</a>
+            <a href="03.html">Exercício 3</a>
+            <a href="04.html">Exercício 4</a>
+            <a href="05.html">Exercício 5</a>
+            <a href="06.html">Exercício 6</a>
+            <a href="07.html">Exercício 7</a>
+    </div>
+</header>
+<script>
+    //PROBLEMA
+    //Considere a lista de números abaixo:
+    // let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
+    //Faça um programa que identifique os números pares e apresente-os ao fim do programa, ordenados de forma crescente.
+
+    //ENTRADA
+    let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
+
+    //PROCESSAMENTO
+    let pares = [];
+
+    for(let item of listaDeNumeros){
+        if(item % 2 === 0){
+            pares.push(item);
+        }
+    }
+    pares.sort;
+
+    //SAÍDA
+    document.write(`Lista de números pares:<li>${pares.join("<li>")}`);
+
+</script>
+</html>

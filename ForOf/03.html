@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<header>
+    <div class="lista">
+        <a href="01.html" >Exercício 1</a>
+        <a href="02.html" >Exercício 2</a>
+        <a href="03.html" class="principal">Exercício 3</a>
+        <a href="04.html">Exercício 4</a>
+        <a href="05.html">Exercício 5</a>
+        <a href="06.html">Exercício 6</a>
+        <a href="07.html">Exercício 7</a>
+        </div>
+</header>
+<script>
+    //PROBLEMA
+    //Considere a lista de números abaixo:
+    // let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    //Separe os números pares e os números ímpares em listas distintas e apresente as listas de forma crescente e forma descrescente.
+
+    //ENTRADA
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    //PROCESSAMENTO
+    let pares = [];
+    let impares = [];
+    let descrescenteimpares = [];
+    let descrescentepares = [];
+    for(let item of listaDeNumeros){
+        if(item % 2 === 0){
+            pares.push(item);
+            descrescentepares.push(item);
+        }
+        else if(item % 2 != 0){
+            impares.push(item);
+            descrescenteimpares.push(item);
+        }
+    }
+    pares.sort;
+    descrescentepares.reverse();
+    impares.sort;
+    descrescenteimpares.reverse();
+
+    //SAÍDA
+    document.write(`Lista de números pares em ordem crescente: <li>${pares.join("<li>")}.</li>
+    Lista de números pares em ordem decescente: <li>${descrescentepares.join("<li>")}. </li>
+    Lista de números ímpares em ordem crescente: <li>${impares.join("<li>")}.</li>
+    Lista de números ímpares em ordem decescente: <li>${descrescenteimpares.join("<li>")}. </li>`)
+
+</script>
+</html>
