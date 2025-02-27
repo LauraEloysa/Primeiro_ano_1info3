@@ -1,0 +1,108 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+    color: #CA86FF;
+}
+header{
+    background-color: black;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li a.principal{
+    color: white;
+    background-color: #CA86FF;
+    padding: 1px;
+}
+header ul li a img{
+    width: 4vw;
+}
+header ul li{
+    margin: 1vw 2vw;
+    width: 20%;
+}
+section.index div{
+    text-align: center;
+    margin-top: 2vw;
+    z-index: 2;
+}
+section.index h1{
+    font-size: 2.5rem;
+    color: #401a5d;
+    margin-bottom: 1vw;
+}
+section.index div h2{
+    margin-bottom:2vw;
+}
+section.index div a{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius:10px ;
+    box-sizing: border-box;
+    margin-top: 5vw;
+}
+section.index img.galatico{
+    position: absolute;
+    width: 40%;
+    margin: 4vw 50vw;
+}
+section.index img.planta{
+    position: absolute;
+    width: 25%;
+    margin: 2vw 15vw;
+}
+section.index img.fofo{
+    position: absolute;
+    width: 25%;
+    margin: 30vw 10vw;
+}

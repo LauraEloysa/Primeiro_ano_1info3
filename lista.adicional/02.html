@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+<html>
+    <link rel="stylesheet" href="style.css">
+<header>
+    <ul>
+        <li><a href="index.html"><img src="scr/logo.jpg" alt="  Logo"></a></li>
+        <li><a href="01.html" >Exer. 1</a></li>
+        <li><a href="02.html" class="principal">Exer. 2</a></li>
+        <li><a href="03.html">Exer. 3</a></li>
+        <li><a href="04.html">Exer. 4</a></li>
+        <li><a href="05.html">Exer. 5</a></li>
+        <li><a href="06.html">Exer. 6</a></li>
+        <li><a href="07.html">Exer. 7</a></li>
+        <li><a href="08.html">Exer. 8</a></li>
+        <li><a href="09.html">Exer. 9</a></li>
+        <li><a href="10.html">Exer. 10</a></li>
+        <li><a href="11.html">Exer. 11</a></li>
+        <li><a href="12.html">Exer. 12</a></li>
+    </ul>
+</header>
+<script>
+    /*
+    PROBLEMA
+    Pergunte ao professor quantas notas o aluno obteve. Na sequência, usando for, peça para o professor informar todas as notas do aluno.
+    Calcule a média das notas e apresente o resultado na tela.
+    */
+
+    //ENTRADA
+
+    const notas = Number(prompt(`Informe quantas notas o aluno obteve::`));
+    let somaNotas = 0;
+
+    //PROCESSAMENTO
+
+    for (let item = 1; item <= notas; item++) {
+       const notasObtidas = prompt(`Informe a ${item}° nota obtidas:`);
+       somaNotas += notas
+    }
+    const media = somaNotas / notas;
+
+    //SAÍDA
+
+    alert(`A média é ${media}`);
+
+</script>
+</html>

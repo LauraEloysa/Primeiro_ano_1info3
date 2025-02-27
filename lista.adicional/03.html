@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+<html>
+    <link rel="stylesheet" href="style.css">
+<header>
+    <ul>
+        <li><a href="index.html"><img src="scr/logo.jpg" alt="  Logo"></a></li>
+        <li><a href="01.html" >Exer. 1</a></li>
+        <li><a href="02.html" >Exer. 2</a></li>
+        <li><a href="03.html" class="principal">Exer. 3</a></li>
+        <li><a href="04.html">Exer. 4</a></li>
+        <li><a href="05.html">Exer. 5</a></li>
+        <li><a href="06.html">Exer. 6</a></li>
+        <li><a href="07.html">Exer. 7</a></li>
+        <li><a href="08.html">Exer. 8</a></li>
+        <li><a href="09.html">Exer. 9</a></li>
+        <li><a href="10.html">Exer. 10</a></li>
+        <li><a href="11.html">Exer. 11</a></li>
+        <li><a href="12.html">Exer. 12</a></li>
+    </ul>
+</header>
+
+<script>
+    /*
+    PROBLEMA
+    Faça um programa que peça ao usuário para informar cinco números.
+    No final, apresente o maior número informado pelo usuário.
+    */
+
+    //ENTRADA
+
+    let numeros = [];
+    
+    //PROCESSAMENTO
+
+    for (let item = 0; item < 5; item++) {
+        let numero = Number(prompt(`Informe um número:`));
+        numeros.push(numero);
+    }
+
+    let maior = numeros[0];
+    for (let numero of numeros) {
+        if (numero > maior) {
+          maior = numero;  
+    }
+    }
+    
+    //SAÍDA
+
+    alert(`O maior número é: ${maior}`);
+
+</script>
+</html>

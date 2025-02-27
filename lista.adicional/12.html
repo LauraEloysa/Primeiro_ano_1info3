@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<html>
+    <link rel="stylesheet" href="style.css">
+<header>
+    <ul>
+        <li><a href="index.html"><img src="scr/logo.jpg" alt="  Logo"></a></li>
+        <li><a href="01.html">Exer. 1</a></li>
+        <li><a href="02.html">Exer. 2</a></li>
+        <li><a href="03.html">Exer. 3</a></li>
+        <li><a href="04.html">Exer. 4</a></li>
+        <li><a href="05.html">Exer. 5</a></li>
+        <li><a href="06.html">Exer. 6</a></li>
+        <li><a href="07.html">Exer. 7</a></li>
+        <li><a href="08.html">Exer. 8</a></li>
+        <li><a href="09.html">Exer. 9</a></li>
+        <li><a href="10.html">Exer. 10</a></li>
+        <li><a href="11.html">Exer. 11</a></li>
+        <li><a href="12.html" class="principal">Exer. 12</a></li>
+    </ul>
+</header>
+
+<script>
+    /*
+    PROBLEMA: INVESTIMENTOS
+    Joãozinho investiu R$ 1.000,00 e o investimento renderá 2% por dia útil. Quantos dias demorará para que Joãozinho consiga o total de R$ 2.000,00.
+    */
+
+    //ENTRADA
+    let investimento = 1000
+    let dias = 0
+
+    //PROCESSAMENTO
+    for (let valor = 1; investimento <= 2000; valor ++){
+        investimento += (investimento * 0.02) ;
+        dias++
+    }
+
+    //SAÍDA
+    alert(`Ele demorará ${dias}`)
+
+</script>
+</html>

@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+<html>
+    <link rel="stylesheet" href="style.css">
+<header>
+    <ul>
+        <li><a href="index.html"><img src="scr/logo.jpg" alt="  Logo"></a></li>
+        <li><a href="01.html" >Exer. 1</a></li>
+        <li><a href="02.html">Exer. 2</a></li>
+        <li><a href="03.html">Exer. 3</a></li>
+        <li><a href="04.html">Exer. 4</a></li>
+        <li><a href="05.html">Exer. 5</a></li>
+        <li><a href="06.html"class="principal">Exer. 6</a></li>
+        <li><a href="07.html">Exer. 7</a></li>
+        <li><a href="08.html">Exer. 8</a></li>
+        <li><a href="09.html">Exer. 9</a></li>
+        <li><a href="10.html">Exer. 10</a></li>
+        <li><a href="11.html">Exer. 11</a></li>
+        <li><a href="12.html">Exer. 12</a></li>
+    </ul>
+</header>
+
+<script>
+    /*
+    PROBLEMA
+    Faça um programa que pergunte ao usuário um número inicial e um número final. Verifique se o número inicial é menor que o número final e apresente na tela os números ímpares e os números pares que estão entre os dois números. Se o número inicial for maior ou igual ao número final, apresente mensagem de erro para o usuário, informando a regra para o número inicial e número final.
+    */
+
+    //ENTRADA
+
+    const inicial = Number(prompt(`Informe um número inicial:`));
+    const final = Number(prompt(`Informe um número final:`));
+    let impar = [];
+    let par = [];
+    
+    //PROCESSAMENTO
+
+    if (inicial < final) {
+        for(let item = inicial + 1; item < final; item++) {
+            if (item % 2 ==0) {
+                par.push(item);
+            }
+            else {
+                impar.push(item);
+            }
+        }
+    }
+    else {
+        alert(`ERRO!`);
+    }
+    
+    //SAÍDA
+
+    alert(`Pares: ${par} e Ímpares: ${impar}`);
+
+</script>
+</html>

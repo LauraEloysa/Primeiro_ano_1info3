@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+<html>
+    <link rel="stylesheet" href="style.css">
+<header>
+    <ul>
+        <li><a href="index.html"><img src="scr/logo.jpg" alt="  Logo"></a></li>
+        <li><a href="01.html" class="principal">Exer. 1</a></li>
+        <li><a href="02.html">Exer. 2</a></li>
+        <li><a href="03.html">Exer. 3</a></li>
+        <li><a href="04.html">Exer. 4</a></li>
+        <li><a href="05.html">Exer. 5</a></li>
+        <li><a href="06.html">Exer. 6</a></li>
+        <li><a href="07.html">Exer. 7</a></li>
+        <li><a href="08.html">Exer. 8</a></li>
+        <li><a href="09.html">Exer. 9</a></li>
+        <li><a href="10.html">Exer. 10</a></li>
+        <li><a href="11.html">Exer. 11</a></li>
+        <li><a href="12.html">Exer. 12</a></li>
+    </ul>
+</header>
+
+<script>
+    /*
+    PROBLEMA
+    Considere a lista de letras abaixo:
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    Faça um programa que identifique as letras repetidas que estão contidas na lista e apresente cada letra apenas uma única vez, e em ordem alfabética.
+    *Letras maiúsculas e minúsculas são a mesma letra e não podem ser repetidas!
+    **Apresente apenas letras minúsculas!
+    */
+
+    //ENTRADA
+
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let Liguais = [];
+    let Lvistas = [];
+
+    //PROCESSAMENTO
+
+    for (let letras = 0; letras < listaDeLetras.length; letras++) {
+        let letra = listaDeLetras[letras].toLowerCase();
+        if (Lvistas.includes(letra) == false) {
+            Lvistas.push(letra);
+        } else {
+            Liguais.push(letra);
+        }
+    }
+    //SAÍDA
+
+    alert(`Letras repetidas: ${Lvistas.sort()}`);
+
+</script>
+</html>

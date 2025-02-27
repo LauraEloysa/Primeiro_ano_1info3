@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+<html>
+    <link rel="stylesheet" href="style.css">
+<header>
+    <ul>
+        <li><a href="index.html"><img src="scr/logo.jpg" alt="  Logo"></a></li>
+        <li><a href="01.html">Exer. 1</a></li>
+        <li><a href="02.html">Exer. 2</a></li>
+        <li><a href="03.html">Exer. 3</a></li>
+        <li><a href="04.html">Exer. 4</a></li>
+        <li><a href="05.html">Exer. 5</a></li>
+        <li><a href="06.html">Exer. 6</a></li>
+        <li><a href="07.html">Exer. 7</a></li>
+        <li><a href="08.html" class="principal">Exer. 8</a></li>
+        <li><a href="09.html">Exer. 9</a></li>
+        <li><a href="10.html">Exer. 10</a></li>
+        <li><a href="11.html">Exer. 11</a></li>
+        <li><a href="12.html">Exer. 12</a></li>
+    </ul>
+</header>
+
+<script>
+    /*
+    PROBLEMA
+    Faça um programa que leia 5 números e informe a soma e média dos números.
+    */
+
+    //ENTRADA
+    
+    let somaNumeros = 0;
+
+    //PROCESSAMENTO
+
+    for (let number = 1; number <= 5; number++) {
+        const numeros = Number(prompt(`Informe a ${number}° nota:`));
+        somaNumeros += numeros;
+    }
+    let media = somaNumeros / 5;
+
+    //SAÍDA
+
+    alert(`A soma dos números é ${somaNumeros} e a média é ${media}`);
+
+</script>
+</html>

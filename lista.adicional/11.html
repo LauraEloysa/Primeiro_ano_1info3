@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+<html>
+    <link rel="stylesheet" href="style.css">
+<header>
+    <ul>
+        <li><a href="index.html"><img src="scr/logo.jpg" alt="  Logo"></a></li>
+        <li><a href="01.html">Exer. 1</a></li>
+        <li><a href="02.html">Exer. 2</a></li>
+        <li><a href="03.html">Exer. 3</a></li>
+        <li><a href="04.html">Exer. 4</a></li>
+        <li><a href="05.html">Exer. 5</a></li>
+        <li><a href="06.html">Exer. 6</a></li>
+        <li><a href="07.html">Exer. 7</a></li>
+        <li><a href="08.html" >Exer. 8</a></li>
+        <li><a href="09.html">Exer. 9</a></li>
+        <li><a href="10.html">Exer. 10</a></li>
+        <li><a href="11.html" class="principal">Exer. 11</a></li>
+        <li><a href="12.html">Exer. 12</a></li>
+    </ul>
+</header>
+
+<script>
+    /*
+    PROBLEMA: MÚLTIPLOS DE 3
+    Criar um programa que imprima todos os números múltiplos de 3 entre 1 e 100. Calcule a soma dos números.
+    */
+
+    //ENTRADA
+    let multiplos3 = [];
+    let soma = 0
+
+    //PROCESSAMENTO
+    for(let numero = 0; numero <=100; numero++){
+        if(numero % 3 == 0){
+            multiplos3.push(numero)
+            soma += numero;
+        }
+    }
+
+    //SAÍDA
+    alert(`Os múltiplos de três são: ${multiplos3} e a soma deles é: ${soma}.`);
+
+</script>
+</html>

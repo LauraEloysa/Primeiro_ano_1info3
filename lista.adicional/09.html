@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<html>
+    <link rel="stylesheet" href="style.css">
+<header>
+    <ul>
+        <li><a href="index.html"><img src="scr/logo.jpg" alt="  Logo"></a></li>
+        <li><a href="01.html">Exer. 1</a></li>
+        <li><a href="02.html">Exer. 2</a></li>
+        <li><a href="03.html">Exer. 3</a></li>
+        <li><a href="04.html">Exer. 4</a></li>
+        <li><a href="05.html">Exer. 5</a></li>
+        <li><a href="06.html">Exer. 6</a></li>
+        <li><a href="07.html">Exer. 7</a></li>
+        <li><a href="08.html">Exer. 8</a></li>
+        <li><a href="09.html" class="principal">Exer. 9</a></li>
+        <li><a href="10.html">Exer. 10</a></li>
+        <li><a href="11.html">Exer. 11</a></li>
+        <li><a href="12.html">Exer. 12</a></li>
+    </ul>
+</header>
+
+<script>
+    /*
+    PROBLEMA
+    Considere que a população de uma cidade seja de 50000 habitantes, crescendo 1,5% ao ano. Apresente em tela a população prevista para um prazo de 5 anos e um prazo de 10 anos. Apresente os dados em tela.
+    */
+
+    //ENTRADA
+
+    let dez = 50000;
+    let cinco = 50000;
+    
+    //PROCESSAMENTO
+    
+    for (let item = 1; item <= 5; item++) {
+        cinco += ( cinco * 0.015); 
+    }
+    for (let item = 1; item <= 10; item++) {
+        dez += (dez * 0.015); 
+    }
+
+    //SAÍDA
+
+    alert(`A população prevista será de ${Math.round(cinco)} pessoas. \n A população prevista será de ${Math.round(dez)} pessoas.`);
+
+</script>
+</html>
